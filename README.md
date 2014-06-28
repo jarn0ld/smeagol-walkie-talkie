@@ -13,5 +13,5 @@ As radio nodes telosb´s needed to be used. This nodes are pretty power full bat
 Besides the two telosb´s some hardware was required to condition the microphone signal and to amplifie the output signal so that it can be used to drive earphones or a speaker.
 
 ### Microphone Amplifier ###
-![alt text](/images/mic-amp/schematic.png "Schematic of Microphone Amplifier")
+![alt text](/images/mic_amp/schematic.png "Schematic of Microphone Amplifier")
 
