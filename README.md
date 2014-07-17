@@ -27,13 +27,14 @@ As this board circuit will be mounted directly beneath the transmitting node it 
 ![alt text](/images/audio_amp/schematic.png "Schematic of Audio Amplifier")
 
 ## Software ##
-This program reads the ADC input (10 kHz and 12 bit) and send it over the radio using the CC2420 (RF chip). Afterwards, the sent samples are outputted at the DAC on the receiver seide.
+The program reads the ADC input (10 kHz and 12 bit) and send it over the radio using the CC2420 (RF chip). Afterwards, the sent samples are outputted at the DAC on the receiver seide.
 
 Data flow of the samples:
 Sender: ADC->DMA->Buffer->CC2420
 Receiver: CC2420->Buffer->DMA->DAC
 
 The code consists of 5 main components:
+
 adc.c and dac.c: - handles the initialization of the ADC/DAC using a timer
 		 - sampling rate: 10 kHz, 12 bit
 
