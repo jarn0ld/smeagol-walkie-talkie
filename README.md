@@ -35,6 +35,8 @@ Sender: ADC->DMA->Buffer->CC2420
 
 Receiver: CC2420->Buffer->DMA->DAC
 
+
+
 The code consists of 5 main components:
 
 adc.c and dac.c:
